@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Super-Calc</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <h1 id="title1">SuperCalc</h1>
+  <div class="container">
+    <table class="calculator">
+      <tbody>
+        <tr>
+          <td id="display" colspan="5">0</td>
+        </tr>
+        <tr>
+          <td class="number button">7</td>
+          <td class="number button">8</td>
+          <td class="number button">9</td>
+          <td data-op="add" class="operator button">+</td>
+          <td data-op="sum" class="operator button">&#120564</td>
+        </tr>
+        <tr>
+          <td class="number button">4</td>
+          <td class="number button">5</td>
+          <td class="number button">6</td>
+          <td data-op="sub" class="operator button">-</td>
+          <td data-op="exp" class="operator button">x<sup>y</td>
+          </tr>
+          <tr>
+            <td class="number button">1</td>
+            <td class="number button">2</td>
+            <td class="number button">3</td>
+            <td data-op="mul" class="operator button">x</td>
+            <td data-op="root" class="operator button">&#8730</td>
+          </tr>
+          <tr>
+            <td class="number button">0</td>
+            <td class="decimal button">.</td>
+            <td class="operator button sign">&#177</td>
+            <td data-op="div" class="operator button">&#247</td>
+            <td data-op="fact" class="operator button">!</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="push button">Push</td>
+            <td id="clearbox" class="clear button">CB</td>
+            <td id="clear" class="clear button">C</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="queue"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+  </html>
